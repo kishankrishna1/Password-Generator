@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passward Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Passward Generator</h1>
+
+        <div class="display-conatiner">
+            <input readonly placeholder="Passward" class="display" data-passward-display>
+            <button data-copy>
+                <span data-copy-msg></span>
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+
+        <div class="input-conatiner">
+            <div class="length-conatiner">
+                <p>Passward Length</p>
+                <p data-length-number>0</p>
+            </div>
+
+            <input type="range" min="1" max="20" class="slider" step="1" data-length-slider>
+
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes Uppercase letters</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes Lowercase letters</label>
+            </div>
+            <div>
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes Numbers</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes Symbols</label>
+            </div>
+            
+            <div data-indicator class="strength-container">
+                <p>Strength</p>
+            </div>
+
+            <button class="generate-btn">Generate Passward</button>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/da62a88ad9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
